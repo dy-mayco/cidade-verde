@@ -1,0 +1,132 @@
+/* style.css - Cidade Verde */
+
+/* Paleta de Cores em Tons de Verde */
+:root {
+    --verde-principal: #2E8B57; /* Verde Mar (Escuro e Profundo) */
+    --verde-secundario: #4CAF50; /* Verde Floresta (Brilhante e Vivo) */
+    --verde-claro: #E8F5E9; /* Verde Menta Claro (Para fundos) */
+    --verde-escuro: #1B5E20; /* Verde Musgo (Para textos e rodapé) */
+    --amarelo-destaque: #FFD700; /* Destaque de Ação (Ouro) */
+    --branco: #ffffff;
+    --cinza-texto: #333333;
+}
+
+/* Base Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--verde-claro); /* Fundo muito claro para contraste */
+    color: var(--cinza-texto);
+}
+
+.container {
+    width: 90%; /* Mais largo em telas maiores */
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* 1. Cabeçalho e Navegação (Verde Escuro) */
+header {
+    background: var(--verde-escuro); 
+    color: var(--branco);
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    letter-spacing: 2px; /* Dando um toque profissional */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para telas pequenas */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+nav ul li a:hover {
+    color: var(--amarelo-destaque); /* Destaque no hover */
+}
+
+/* 2. Seções de Conteúdo (Mais contraste) */
+section {
+    padding: 40px;
+    margin-bottom: 30px;
+    background: var(--branco);
+    border-radius: 12px; /* Bordas mais suaves */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: var(--verde-principal);
+    border-bottom: 3px solid var(--verde-secundario); /* Linha divisória verde */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: var(--verde-secundario);
+}
+
+/* 3. Botão de Chamada para Ação (CTA) */
+.cta-button {
+    display: inline-block;
+    background: var(--amarelo-destaque);
+    color: var(--verde-escuro); /* Texto escuro no botão claro */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px; /* Botão arredondado e chamativo */
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #f0c400; /* Tom mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de "levantar" */
+}
+
+/* Destaques importantes (A regra do inquilino) */
+strong {
+    color: var(--verde-escuro);
+}
+
+/* Listas e Passos */
+ol, ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* 4. Rodapé */
+footer {
+    background: var(--verde-principal);
+    color: var(--branco);
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 30px;
+}
