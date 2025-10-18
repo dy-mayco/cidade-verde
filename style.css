@@ -17,44 +17,54 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--verde-claro); /* Fundo muito claro para contraste */
+    background-color: var(--verde-claro);
     color: var(--cinza-texto);
 }
 
 .container {
-    width: 90%; /* Mais largo em telas maiores */
+    width: 90%;
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
     padding: 20px 0;
 }
 
-/* 1. Cabeçalho e Navegação (Verde Escuro) */
+/* 1. Cabeçalho e Navegação */
 header {
     background: var(--verde-escuro); 
     color: var(--branco);
-    padding: 1.5em 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 1em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    margin-bottom: 0.5em;
-    font-size: 2em;
-    letter-spacing: 2px; /* Dando um toque profissional */
+/* Estilo da Logo (Simulando a imagem) */
+.logo {
+    display: inline-block;
+    color: var(--branco); /* Texto branco no header escuro */
+    font-size: 2.2em;
+    font-weight: 800; /* Negrito para simular a fonte da imagem */
+    line-height: 0.9;
+    text-align: left;
+    margin: 0 20px;
 }
 
+.logo span {
+    display: block;
+}
+
+/* Menu de Navegação */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Para telas pequenas */
+    flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 5px 15px;
 }
 
 nav ul li a {
@@ -62,25 +72,25 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
-    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: var(--amarelo-destaque); /* Destaque no hover */
+    color: var(--amarelo-destaque);
 }
 
-/* 2. Seções de Conteúdo (Mais contraste) */
+/* 2. Seções de Conteúdo */
 section {
     padding: 40px;
     margin-bottom: 30px;
     background: var(--branco);
-    border-radius: 12px; /* Bordas mais suaves */
+    border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
 section h2 {
     color: var(--verde-principal);
-    border-bottom: 3px solid var(--verde-secundario); /* Linha divisória verde */
+    border-bottom: 3px solid var(--verde-secundario);
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -89,14 +99,19 @@ section h3 {
     color: var(--verde-secundario);
 }
 
+/* Destaques importantes */
+strong {
+    color: var(--verde-escuro);
+}
+
 /* 3. Botão de Chamada para Ação (CTA) */
 .cta-button {
     display: inline-block;
     background: var(--amarelo-destaque);
-    color: var(--verde-escuro); /* Texto escuro no botão claro */
+    color: var(--verde-escuro);
     padding: 15px 30px;
     text-decoration: none;
-    border-radius: 50px; /* Botão arredondado e chamativo */
+    border-radius: 50px;
     margin-top: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -104,25 +119,11 @@ section h3 {
 }
 
 .cta-button:hover {
-    background-color: #f0c400; /* Tom mais escuro no hover */
-    transform: translateY(-2px); /* Efeito de "levantar" */
+    background-color: #f0c400;
+    transform: translateY(-2px);
 }
 
-/* Destaques importantes (A regra do inquilino) */
-strong {
-    color: var(--verde-escuro);
-}
-
-/* Listas e Passos */
-ol, ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* 4. Rodapé */
+/* Rodapé */
 footer {
     background: var(--verde-principal);
     color: var(--branco);
