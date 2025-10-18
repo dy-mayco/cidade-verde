@@ -131,37 +131,3 @@ footer {
     padding: 1.5em 0;
     margin-top: 30px;
 }
-
-/* style.css - NOVO TRECHO PARA A LOGO E RAIO VISÍVEL */
-
-.logo {
-    /* Define o container para o alinhamento e posicionamento */
-    display: flex;
-    flex-direction: column; /* Alinha "CIDADE" e "VERDE" verticalmente */
-    color: var(--branco); 
-    font-size: 2.2em;
-    font-weight: 800;
-    line-height: 0.9;
-    text-align: left;
-    margin: 0 20px;
-    position: relative; 
-    padding-left: 35px; /* Espaço para o raio */
-}
-
-/* Estilo para o ícone do Raio */
-.logo .raio-icone {
-    color: var(--amarelo-destaque); /* Cor amarela/ouro do raio */
-    font-size: 1.5em; 
-    position: absolute;
-    left: 0; 
-    top: 50%;
-    transform: translateY(-50%) rotate(340deg); /* Centraliza e gira */
-    display: block !important; /* GARANTE QUE APAREÇA EM TODAS */
-}
-
-/* Estilo para simular a cor da imagem */
-.logo .top-line {
-    color: var(--verde-secundario);
-}
-
-/* O restante do style.css permanece o mesmo */
